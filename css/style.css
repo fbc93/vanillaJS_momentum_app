@@ -1,0 +1,295 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: --apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+/* hidden */
+.hidden {
+  display: none !important;
+}
+
+/* wrapper */
+.wrapper {
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 70px 30px;
+  border-radius: 30px;
+}
+
+/* weather-container */
+#weather-container {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 15px 15px 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.38);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+
+#weather-container .left-box {
+  margin-right: 15px;
+}
+
+#weather-container .right-box .temperature {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#weather-container .right-box .temperature span {
+  font-size: 2rem;
+  vertical-align: text-top;
+}
+
+#weather-container .right-box .location {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+#weather-container .right-box .detail {
+  font-size: 1.8rem;
+}
+
+#weather-container .icon-image {
+  width: 50px;
+  height: 50px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* clock-container */
+#clock-container {
+  margin: auto;
+  width: 480px;
+  box-sizing: border-box;
+  padding: 0px 25px 20px 25px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#clock-container .today {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#clock-container .now {
+  font-size: 8rem;
+  font-weight: 700;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#clock-container .now>div {
+  width: 100px;
+  line-height: 10rem;
+  text-align: center;
+}
+
+#clock-container .now>div:nth-child(2n) {
+  width: 30px;
+  text-align: center;
+  line-height: 8rem;
+}
+
+/* movie-quotes-container */
+#movie-quotes-container {
+  width: 100%;
+  height: fit-content;
+  font-size: 2rem;
+  box-sizing: border-box;
+  padding: 25px 35px 25px 35px;
+  background: rgba(255, 255, 255, 0.38);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: center;
+  margin: 15px auto 15px;
+  line-height: 2.8rem;
+}
+
+/* name-form */
+#name-form {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  margin: 50px auto 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#name-form input {
+  width: calc(100% - 110px);
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+#name-form button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  background-color: dodgerblue;
+  color: #ffffff;
+}
+
+/* greeting-container */
+#greeting-container .top-container {
+  margin-bottom: 15px;
+  background-color: #edededc0;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#greeting-container .top-container .greeting-ment {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+}
+
+
+#greeting-container .todo-list-container .title {
+  margin-top: 30px;
+  color: #ffffff;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+#greeting-container .todo-list-container .list-container .todo-list {
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  max-height: 215px;
+  overflow: scroll;
+}
+
+#greeting-container .todo-list-container .list-container .todo-list>li {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  font-weight: 500;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 15px 20px 15px 25px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#greeting-container .todo-list-container .list-container .todo-list>li>button {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ffff;
+  line-height: 26px;
+  padding: 0;
+  font-size: 15px;
+}
+
+#greeting-container .todo-list-container .list-container .todo-list>li>span {
+  font-size: 1.8rem;
+  -webkit-line-height: 1;
+  line-height: 3rem;
+}
+
+#greeting-container .todo-list-container .list-container .empty {
+  margin-bottom: 15px;
+  background-color: #edededc0;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  padding: 35px;
+  line-height: 1;
+  font-weight: 400;
+  text-align: center;
+  color: #999999;
+  letter-spacing: -0.5px;
+}
+
+#greeting-container .top-container .todo-list-form {
+  width: 100%;
+}
+
+#greeting-container .top-container .todo-list-form input {
+  width: calc(100% - 106px);
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  font-size: 1.6rem;
+}
+
+#greeting-container .top-container .todo-list-form button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: center;
+  font-weight: 600;
+  padding: 0;
+  background: blueviolet;
+  color: #ffffff;
+}
+
+#greeting-container .back-button {
+  width: 100%;
+  height: 50px;
+  line-height: 1.5rem;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: 500;
+  background: dodgerblue;
+  color: #ffffff;
+}

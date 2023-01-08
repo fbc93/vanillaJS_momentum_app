@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2023_vanillaJS_momentum_app</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- weather-container -->
+  <div id="weather-container">
+    <div class="left-box">
+      <div class="icon-image" src="image/ico-weather-default.png"
+        style="background-image:url(image/ico-weather-default.png)"></div>
+    </div>
+    <div class="right-box">
+      <div class="temperature">00.00<span> °C</span></div>
+      <span class="location">City Name</span>
+      <span class="detail">detail weather</span>
+    </div>
+  </div>
+
+  <div class="wrapper">
+
+    <!-- clock-container -->
+    <div id="clock-container">
+      <div class="today">0000년 00월 00일 (월)</div>
+      <div class="now">
+        <div>00</div>
+        <div>:</div>
+        <div>00</div>
+        <div>:</div>
+        <div>00</div>
+      </div>
+    </div>
+
+    <!-- movie-quotes-container -->
+    <div id="movie-quotes-container"></div>
+
+    <!-- name-form -->
+    <form id="name-form">
+      <input type="text" maxlength="6" placeholder="이름을 입력하세요" required autofocus>
+      <button>입력완료</button>
+    </form>
+
+    <!-- greeting-form -->
+    <div id="greeting-container" class="hidden">
+
+      <div class="top-container">
+        <!-- greeting-ment -->
+        <div class="greeting-ment"></div>
+
+        <!-- todo-list-form -->
+        <form class="todo-list-form">
+          <input type="text" placeholder="할일을 입력해보세요" required autofocus>
+          <button>등록하기</button>
+        </form>
+      </div>
+
+      <!-- todo-list-container -->
+      <div class="todo-list-container">
+        <div class="title">오늘의 할일 🙋‍♀️</div>
+        <div class="list-container">
+          <div class="empty">아직 할일이 없어요 :/</div>
+          <ul class="todo-list hidden"></ul>
+        </div>
+      </div>
+
+      <!-- back-button -->
+      <button class="back-button">다른 이름으로 새로 시작하기</button>
+    </div>
+  </div>
+
+
+  <script src="js/clock.js"></script>
+  <script src="js/random.js"></script>
+  <script src="js/name.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+
+</html>
