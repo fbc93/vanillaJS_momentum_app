@@ -1,2 +1,0 @@
-# vanillaJS_momentum_app
-2023 vanillaJS_momentum_app
